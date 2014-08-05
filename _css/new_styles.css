@@ -1,0 +1,68 @@
+/*
+Syntax error: Undefined variable: "$red".
+        on line 56 of _css/new_styles.scss
+
+51:       -o-transition: all .4s ease-in;
+52:       transition: all .4s ease-in;
+53:     top: 0;
+54:     bottom: 0;
+55:     background: #555;
+56:     border-right: 3px solid $red;
+57:     z-index: 400;
+58:     letter-spacing: .05em;
+59:     &.showing{
+60:         left:0% !important;
+61:           -webkit-transition: all .4s ease-out;
+
+Backtrace:
+_css/new_styles.scss:56
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/list.rb:71:in `block in _perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/list.rb:71:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/list.rb:71:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$red\".\A         on line 56 of _css/new_styles.scss\A \A 51:       -o-transition: all .4s ease-in;\A 52:       transition: all .4s ease-in;\A 53:     top: 0;\A 54:     bottom: 0;\A 55:     background: #555;\A 56:     border-right: 3px solid $red;\A 57:     z-index: 400;\A 58:     letter-spacing: .05em;\A 59:     &.showing{\A 60:         left:0% !important;\A 61:           -webkit-transition: all .4s ease-out;"; }

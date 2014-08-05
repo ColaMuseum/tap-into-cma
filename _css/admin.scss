@@ -1,0 +1,86 @@
+*{
+	font-family: "myriad", myriad, "myriad-web", helvetica, sans-serif;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2 {
+    display: inline-block;
+}
+
+h1 {
+    padding-right: 10px;
+}
+
+h3 {
+    color: #999;
+}
+
+.groupStop {
+    color: red;
+}
+
+.stop {
+    margin-bottom: 5px;
+}
+
+form {
+    margin-bottom: 50px;
+    input {
+        display: block;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+    }
+}
+
+ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        ul {
+            &.subStops {
+                li {
+                    color: #666;
+                    &.title {
+                        font-weight: bold;
+                        color: #000;
+                    }
+                }
+            }
+            li {}
+        }
+    }
+}
+
+.stopTitle {
+    background: #efefef;
+    padding: 5px;
+}
+
+.stop {
+    cursor: pointer;
+    ul.subStop {
+        display: none;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+}
+
+form {
+	h1{
+		margin-bottom:10px;
+	}
+    input,label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #groupStop{
+    	display: none;
+    }
+}
