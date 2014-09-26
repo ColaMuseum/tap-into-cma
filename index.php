@@ -1,6 +1,7 @@
 <?
 
 //$useragent = $_SERVER['HTTP_USER_AGENT'];
+$noCurrentTours = false;
 
 $pageTitle = "TAP into CMA";
 $page = "home";
@@ -25,10 +26,7 @@ $query = "SELECT * from tours
 
 // Search for archived tours
 if($showTours == "all"){
-$query = "SELECT * from tours 
-    WHERE 
-    (openDate <= '$curDate' AND closeDate <= '$curDate')
-        "; 
+$query = "SELECT * from tours"; 
     $archive = 1;
     $noIconTitle = "noIconTitle";
     $noIcon = "class='noIcon'";
@@ -37,34 +35,46 @@ $query = "SELECT * from tours
 
 $result = mysqli_query($db,$query);
 
-while($row = mysqli_fetch_assoc($result)){
-    $tourID = $row['tourID'];
-    $title  = $row['title'];
-    $image  = $row['image'];
-    $length = $row['length'];
-    $noStops = $row['noStops'];
-    $iconType = $row['icon'];
+if(mysqli_num_rows($result) <= 0){
+    $noCurrentTours = true;
+    $query = "SELECT * from tours"; 
+    $archive = 1;
+    $noIconTitle = "noIconTitle";
+    $noIcon = "class='noIcon'";
+    $type = "&type=a";
+    $result = mysqli_query($db,$query);
+}
 
-    if($archive){
-        $openDate  = $row['openDate'];
-        $closeDate  = $row['closeDate'];
-        $openDate = date("M j, Y", strtotime($openDate));
-        $closeDate = date("M j, Y", strtotime($closeDate));
-        $dates = "<span class='dates'>$openDate - $closeDate</span>";
-    }
-    else $dates = "";
+if($result){
+    while($row = mysqli_fetch_assoc($result)){
+        $tourID = $row['tourID'];
+        $title  = $row['title'];
+        $image  = $row['image'];
+        $length = $row['length'];
+        $noStops = $row['noStops'];
+        $iconType = $row['icon'];
 
-    if($length && $noStops){
-        $details = "<span>$length | $noStops stops</span>";
-    }
-    else $details = "";
-
-    if(!$showTours){
-        switch($iconType){
-            case 1: $icon="<span class='icon main'></span>"; break;
-            case 2: $icon="<span class='icon family'></span>"; break;
-            case 3: $icon="<span class='icon square-3'></span>"; break;
+        if($archive){
+            $openDate  = $row['openDate'];
+            $closeDate  = $row['closeDate'];
+            $openDate = date("M j, Y", strtotime($openDate));
+            $closeDate = date("M j, Y", strtotime($closeDate));
+            $dates = "<span class='dates'>$openDate - $closeDate</span>";
         }
+        else $dates = "";
+
+        if($length && $noStops){
+            $details = "<span>$length | $noStops stops</span>";
+        }
+        else $details = "";
+
+        if(!$showTours){
+            switch($iconType){
+                case 1: $icon="<span class='icon main'></span>"; break;
+                case 2: $icon="<span class='icon family'></span>"; break;
+                case 3: $icon="<span class='icon square-3'></span>"; break;
+            }
+    }
 }
 
 $title = "<span class='title $noIconTitle'>$title</span>";
@@ -110,7 +120,7 @@ include("_inc/common-header.php");
             </ul>
         </nav>
         <? 
-        if($showTours != "all"){
+        if($showTours != "all" && !$noCurrentTours){
             include "_inc/stopSearch.php"; 
         }
         ?>
