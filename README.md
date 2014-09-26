@@ -1,7 +1,6 @@
-tap-into-cma
-============
+# TAP INTO CMA
 
-Web-based mobile tour application for the Columbia Museum of Art.
+### Web-based mobile tour application for the Columbia Museum of Art.
 
 Live tour: http://tours.columbiamuseum.org
 
@@ -9,6 +8,6 @@ Application allows the museum to offer an immersive multimedia (audio, video, im
 
 We are trying to build a little admin area to facilitate tour additions and edits to the existing tours. Any help would be much appreciated.
 
-I've connected the code in this repository to a sandbox database. I've also included a sql file if you want dump the tour data into a local database.
+I've connected the code in this repository to a sandbox database. You will need to change "_inc/db_connect_sandbox.php" to "_inc/db_connect.php" I've also included a sql file if you want dump the tour data into a local database.
 
 Send any questions or comments to jgoley@columbiamuseum.org or jgoley@gmail.com
