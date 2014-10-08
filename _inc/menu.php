@@ -1,3 +1,15 @@
+<?
+
+$query = "SELECT * from tours 
+    WHERE 
+    (openDate <= '$curDate' AND closeDate >= '$curDate')
+    OR testing = '1'";
+$result = mysqli_query($db,$query);
+if(mysqli_num_rows($result) <= 0){
+    $slimMenu = true;
+}
+?>
+
 <section id="menu">
     <h1>TAP into CMA</h1>
     <ul>

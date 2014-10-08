@@ -232,7 +232,7 @@ span.icon {
     // background-size: 20px auto;
     position: absolute;
     display: block;
-    left: 10px;
+    left: .2em;
     top: 38px;
     opacity: .7;
     font-size: 1.7em;
@@ -267,6 +267,9 @@ span.icon {
     }
     nav {
         margin: 40px 0 40px 0;
+        &.archive-list{
+            margin:10px 0 40px 0;
+        }
     }
     ul {
         &.stop-list {
@@ -296,9 +299,9 @@ span.icon {
             }
             a {
                 white-space: normal;
-                padding: 20px 10% 20px 30px;
+                padding: 20px 10% 20px 1.2em;
                 &.noIcon {
-                    padding: 20px 10% 20px 3%;
+                    padding: 20px 10% 20px 1.1em;
                 }
                 span.title {
                     padding-left: 12px;
