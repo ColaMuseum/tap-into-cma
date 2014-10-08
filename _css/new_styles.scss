@@ -365,6 +365,13 @@ ul {
 //  }
 // }
 
+.noTours{
+    text-align: center;
+    margin-top: 50px;
+    padding:0 50px;
+}
+
+
 ul.stop-list {
     margin-bottom: 20px;
     width: 100%;
@@ -530,3 +537,4 @@ ul.stop-list {
     z-index: 300;
     transition: background-color .5s ease;
 }
+

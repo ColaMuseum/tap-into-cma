@@ -1,2 +1,3 @@
 assets/
-inc/db_connect.php
+_inc/db_connect.php
+.sass-cache/
