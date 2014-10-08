@@ -5,6 +5,7 @@
 $pageTitle = "Help";
 
 $helpNoShow = 1;
+include("_inc/db_connect.php");
 
 ?>
 

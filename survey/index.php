@@ -1,4 +1,6 @@
 <?
+include("../_inc/db_connect.php");
+
 $dir = "../";
 //$page = "visit";
 //$curDate = date('Y-m-d');
