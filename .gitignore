@@ -1,3 +1,5 @@
 assets/
 _inc/db_connect.php
 .sass-cache/
+_notes/
+dwsync.xml

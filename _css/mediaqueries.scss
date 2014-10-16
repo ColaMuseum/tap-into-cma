@@ -1,41 +1,39 @@
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) and (max-width: 599px) {
-
     article {
         video {
             &.video {
                 height: auto;
                 width: 100%;
-                margin:inherit auto;
-                }
+                margin: inherit auto;
+            }
             &.audio {
                 height: 123px;
                 width: 100%;
-                margin:inherit auto;
+                margin: inherit auto;
             }
         }
     }
 }
 
-
 @media (min-width: 600px) {
-	h1 {
-	    &.tourTitle {
-			font-size:2em;
-	    }
-	}
-	#stopSearch{
-		overflow: hidden;
-		input[type="tel"] {
-			float:left;
-			width:74%;
-        padding:22px 5px;
-		}
-		    input[type="submit"] {
-		    	float:right;
-		    	width:25%;
-		    }
-	}
+    h1 {
+        &.tourTitle {
+            font-size: 2em;
+        }
+    }
+    #stopSearch {
+        overflow: hidden;
+        input[type="tel"] {
+            float: left;
+            width: 74%;
+            padding: 22px 5px;
+        }
+        input[type="submit"] {
+            float: right;
+            width: 25%;
+        }
+    }
     article {
         video {
             &.video {
@@ -48,12 +46,21 @@
                 background: #FFF;
             }
         }
-    }
-    article {
         h1, h2 {
             width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+        h1, h2 {
+            font-size: 1.2em;
+            width: 600px;
+        }
+        h2 {
+            font-size: 1em;
+        }
+        p {
+            width: 600px;
+            margin: .15em auto;
         }
     }
     img, header img {
@@ -61,88 +68,68 @@
         margin: 0 auto;
         display: block;
     }
-    article {
-        h1, h2 {
-        	font-size:1.2em;
-            width: 600px;
-        }
-        h2{
-        	font-size:1em;
-        }
-    }
-    article {
-        p {
-            width: 600px;
-            margin: 10px auto;
-        }
-    }
     .tourTitle-wrap {
         background: #CCC;
         border-bottom: 3px solid #8c8c8c;
-        div{
-            width:50%;
+        div {
+            width: 50%;
         }
     }
-    footer{
+    footer {
         display: block;
     }
-    #survey{
-        form{
-            textarea{
+    #survey {
+        form {
+            textarea {
                 max-width: 75%;
             }
-
-        input[type="range"]{
-            padding:0;
-            width: 55%;
-        }
+            input[type="range"] {
+                padding: 0;
+                width: 55%;
+            }
         }
     }
-    #selector ul{
-        padding:0 4%;
+    #selector ul {
+        padding: 0 4%;
     }
-
 }
 
-
-
 @media (min-width: 1025px) {
-    
-    ul.stop-list{
-        border-top:none;
+    ul.stop-list {
+        border-top: none;
     }
-	#stopSearch{
-		display:none;
-	}
-	h1.tourTitle{
-		background:#FFF;
-        border-bottom:4px solid #CCC;
-		border-top:4px solid #CCC;
-	}
-
-	article {
+    #stopSearch {
+        display: none;
+    }
+    h1.tourTitle {
+        background: #FFF;
+        border-bottom: 4px solid #CCC;
+        border-top: 4px solid #CCC;
+    }
+    article {
         video {
             &.video {
-            	margin:0 auto;
+                margin: 0 auto;
                 height: auto;
                 width: 1000px;
             }
             &.audio {
-            	margin:0 auto;
-                height: 250px;;
+                margin: 0 auto;
+                height: 250px;
                 width: 1000px;
             }
         }
-    }
-    article {
         h1, h2 {
-        	font-size:1.6em;
+            font-size: 1.6em;
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
-        h2{
-        	font-size:1.2em;
+        h2 {
+            font-size: 1.2em;
+        }
+        p {
+            width: 1000px;
         }
     }
     img, header img {
@@ -150,21 +137,15 @@
         margin: 0 auto;
         display: block;
     }
-    article {
-        p {
-            width: 1000px;
-            margin: 10px auto;
-        }
-    }
-    .backButton{
-    	width:40%;
-    }
 
-    #survey{
-        form{
+    .backButton {
+        width: 40%;
+    }
+    #survey {
+        form {
             font-size: 1em;
         }
-        textarea{
+        textarea {
             max-width: 50%;
         }
     }

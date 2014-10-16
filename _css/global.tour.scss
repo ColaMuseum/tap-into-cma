@@ -146,11 +146,21 @@ article {
     position: relative;
     //background: #ebebeb;
     margin-bottom: 30px;
-    h1 {
-        margin: 0;
-        padding: 8px 3% 0 3%;
+    .stop-info{
+        padding: 10px 3% 10px 3%;
         background: $lGray;
+    }
+    p {
+        font-size: 12px;
+        padding:.1em 0;
+        margin:0;
+        color:#888;
+    }
+    h1 {
+        padding:0;
+        margin: 0;
         font-size: 1.3em;
+
         //box-shadow: inset 0 -5px 10px rgba(0,0,0,.5);
         &.imageTitle {
             font-style: italic;
@@ -160,14 +170,9 @@ article {
         }
     }
     h2 {
-        background: $lGray;
         font-size: 13px;
         color: #666;
-        padding: 0 3% 10px 3%;
-        margin: 0;
-    }
-    p {
-        font-size: 14px;
+        margin: 0 0 .1em 0;
     }
     span {
         position: absolute;
@@ -233,7 +238,7 @@ span.icon {
     position: absolute;
     display: block;
     left: .2em;
-    top: 38px;
+    top: 50%;
     opacity: .7;
     font-size: 1.7em;
     line-height: 0;

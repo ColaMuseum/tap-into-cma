@@ -1,7 +1,10 @@
 <?
 // Search for archived tours
 if($showTours == "all"){
-$query = "SELECT * from tours"; 
+$query = "SELECT * from tours
+        WHERE 
+        closeDate <= '$curDate'
+        ORDER BY closeDate DESC"; 
     $archive = true;
     $noIconTitle = "noIconTitle";
     $noIcon = "class='noIcon'";
@@ -39,13 +42,14 @@ if($result && mysqli_num_rows($result) > 0){
             $details = "<span>$length | $noStops stops</span>";
         }
         else $details = "";
-
+$title = "<span class='title $noIconTitle'>$title</span>";
         if(!$archive){
             switch($iconType){
                 case 1: $icon="<span class='icon main'></span>"; break;
                 case 2: $icon="<span class='icon family'></span>"; break;
                 case 3: $icon="<span class='icon square-3'></span>"; break;
             }
+            
     }
     $stopList .= "<li>
                     <a href='tour?tourID=$tourID$type'

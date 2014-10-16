@@ -32,13 +32,12 @@ $(function() {
     var stopNums = <? echo json_encode($stopNums); ?> ;
     $("input[name='stopID']").keyup(function() {
         var t = $(this).val();
-        console.log(t);
         if ($.inArray(t, stopNums) >= 0 && t.length == 3) {
             var e = 1;
             $("input[type='submit']").removeAttr("disabled").addClass("goodGo")
         } else e || ($("input[type='submit']").attr("disabled", ""), $("input[type='submit']").attr("disabled", "true").removeClass("goodGo"));
-        e = ""
-    })
+        e = "";
+    });
 });
 </script>
 

@@ -29,7 +29,7 @@ include("_inc/common-header.php");
 ?>
 </head>
 
-<body>
+<body ontouchstart="">
 <div class="loading"></div>
     <div id="home">
         <? 
