@@ -19,7 +19,7 @@ $topLevel = "../";
 
 </head>
 
-<body>
+<body ontouchstart="">
     <div id="survey">
         <? $pageTitle= "Feedback"; include "../_inc/header.php"; ?>
 	

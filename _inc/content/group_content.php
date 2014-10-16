@@ -27,7 +27,7 @@ while($row = mysqli_fetch_assoc($result)){
     $groupTitle   = $row['groupTitle'];
     $stopType     = $row['stopType'];
     $title        = $row['title'];
-    $description  = $row['description'];
+    $description  = $row['description'] ? "<p>".$row['description']."</p>" : NULL;
     $speaker      = $row['speaker'];
     $speakerImage = $row['speakerImage'];
     $source       = $row['source'];
@@ -45,7 +45,7 @@ while($row = mysqli_fetch_assoc($result)){
             case 5: $type = "<span class='film'></span>";  $italicize = "class='music-title'"; break;
         }
 
-    $stopInfo="<h1 $italicize>$stopTitle</h1><h2>$speaker</h2>";
+    $stopInfo="<div class='stop-info'><h1 $italicize>$stopTitle</h1><h2>$speaker</h2>$description</div>";
 
     if($groupID == 0){
         $auto      = "autoplay";
